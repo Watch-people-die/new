@@ -5,12 +5,10 @@ export default function Header() {
   return (
     <header className="bg-black text-white px-6 py-4 shadow-md border-b border-white/10">
       <nav className="flex items-center justify-between">
-        {/* Logo */}
         <div className="text-2xl font-bold tracking-wide">
           LOGO
         </div>
 
-        {/* Navigation Links */}
         <div className="flex gap-6 text-lg font-medium">
           <Link
             href="/"
@@ -26,7 +24,6 @@ export default function Header() {
           </Link>
         </div>
 
-        {/* Search Input */}
         <div>
           <input
             type="text"

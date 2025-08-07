@@ -1,9 +1,7 @@
 import React from 'react'
 
-function HomeWidget() {
+export function HomeWidget() {
   return (
     <div>HomeWidget</div>
   )
 }
-
-export default HomeWidget
