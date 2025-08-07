@@ -4,25 +4,36 @@ import React from 'react';
 export default function Header() {
   return (
     <header className="bg-black text-white px-6 py-4 shadow-md border-b border-white/10">
-      <nav className="flex gap-6 text-lg font-semibold">
-        <Link
-          href="/"
-          className="hover:text-white hover:underline underline-offset-4 transition duration-150"
-        >
-          Home
-        </Link>
-        <Link
-          href="/posts"
-          className="hover:text-white hover:underline underline-offset-4 transition duration-150"
-        >
-          Posts
-        </Link>
-        <Link
-          href="/posts1"
-          className="hover:text-white hover:underline underline-offset-4 transition duration-150"
-        >
-          Posts1
-        </Link>
+      <nav className="flex items-center justify-between">
+        {/* Logo */}
+        <div className="text-2xl font-bold tracking-wide">
+          LOGO
+        </div>
+
+        {/* Navigation Links */}
+        <div className="flex gap-6 text-lg font-medium">
+          <Link
+            href="/"
+            className="hover:text-white hover:underline underline-offset-4 transition duration-150 text-white/80"
+          >
+            Home
+          </Link>
+          <Link
+            href="/posts"
+            className="hover:text-white hover:underline underline-offset-4 transition duration-150 text-white/80"
+          >
+            Recent
+          </Link>
+        </div>
+
+        {/* Search Input */}
+        <div>
+          <input
+            type="text"
+            placeholder="Search"
+            className="bg-black border border-white/20 rounded-md px-3 py-1.5 text-sm text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-white/50 transition duration-150"
+          />
+        </div>
       </nav>
     </header>
   );
