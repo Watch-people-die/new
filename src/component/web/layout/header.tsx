@@ -20,7 +20,25 @@ export default function Header() {
             href="/posts"
             className="hover:text-white hover:underline underline-offset-4 transition duration-150 text-white/80"
           >
-            Recent
+            Newest
+          </Link>
+          <Link
+            href="/posts"
+            className="hover:text-white hover:underline underline-offset-4 transition duration-150 text-white/80"
+          >
+            Updated
+          </Link>
+          <Link
+            href="/posts"
+            className="hover:text-white hover:underline underline-offset-4 transition duration-150 text-white/80"
+          >
+            Custom
+          </Link>
+          <Link
+            href="/posts"
+            className="hover:text-white hover:underline underline-offset-4 transition duration-150 text-white/80"
+          >
+            Types
           </Link>
         </div>
 
