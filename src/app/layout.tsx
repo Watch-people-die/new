@@ -24,7 +24,6 @@ export default function RootLayout({
       <body
         className={itim.className}
       >
-        <Header />
         {children}
       </body>
     </html>
