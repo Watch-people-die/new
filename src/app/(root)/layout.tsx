@@ -5,11 +5,16 @@ import React from "react";
 export default function HomeLayout({ children }: { children: React.ReactNode }) {
   return (
     <div>
-      <main>
-        <Header/>
+    <div className="flex flex-col min-h-screen">
+      <Header />
+
+      {/* Content expands to push footer down */}
+      <main className="flex-1">
         {children}
-        <Footer/>
       </main>
+
+      <Footer />
+    </div>
     </div>
   );
 }

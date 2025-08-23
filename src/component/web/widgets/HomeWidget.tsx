@@ -14,6 +14,9 @@ export function HomeWidget() {
     <MangaCard />
     <MangaCard />
     <MangaCard />
+    <MangaCard />
+    <MangaCard />
+    <MangaCard />
   </div>
 </div>
 

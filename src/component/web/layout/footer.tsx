@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-gray-300 py-6 mt-8 border w-full">
+    <footer className="bg-black text-gray-300 py-6 mt-8 border w-full min-">
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-sm">
           © {new Date().getFullYear()}
