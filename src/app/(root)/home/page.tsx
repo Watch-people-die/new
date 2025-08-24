@@ -1,8 +1,10 @@
 import {HomeWidget} from "@/component/web/widgets/HomeWidget"
-export default function Page() {
+import { randomManga } from "@/core/manga"
+export default async function Page() {
+  const data = await randomManga()
   return (
     <div>
-        <HomeWidget/>
+        <HomeWidget randommanga={data.data}/>
     </div>
   )
 }
